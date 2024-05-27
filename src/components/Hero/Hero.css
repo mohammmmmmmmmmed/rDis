@@ -1,0 +1,55 @@
+/* Hero.css */
+
+.heroBg {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  transition: opacity 5s ease-in-out;
+  animation: slideshow 15s infinite;
+}
+.animate-bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+ 
+  .translate-y-0 {
+    transform: translateY(0);
+  }
+  
+  .translate-y-10 {
+    transform: translateY(10px);
+  }
+  
+  .opacity-0 {
+    opacity: 0;
+  }
+  
+  .opacity-100 {
+    opacity: 100;
+  }
+
+  @keyframes slideshow {
+    0% {
+      background-image: url('https://ca-times.brightspotcdn.com/dims4/default/f11999b/2147483647/strip/true/crop/600x338+0+0/resize/1200x676!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F47%2F7e%2Fb537393e4060861fdd09936f3f92%2Fsd-photos-handouts-2sars-cov-2-video.gif');
+    }
+    33% {
+      background-image: url('https://apps.bbmpgov.in/Covid19/en/images/corona.gif');
+    }
+    66% {
+      background-image: url('https://img.freepik.com/premium-photo/head-medical-stethoscope-lying-black-background-closeup_151013-32334.jpg');
+
+    }
+    100% {
+      background-image: url("https://st4.depositphotos.com/26148930/37867/i/450/depositphotos_378675468-stock-photo-black-stethoscope-doctor-diagnostic-coronavirus.jpg");
+    }
+  }
